@@ -5,8 +5,10 @@
 import heartFill from './assets/heart-fill.svg';
 import heartStroke from './assets/heart-stroke.svg';
 import { Header } from './components/header/Header';
+import { useProperties} from './hooks/useProperties';
 
 function App() {
+  useProperties();
   return (
     <><Header
         title="Here is the title"
