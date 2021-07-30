@@ -6,4 +6,11 @@
 
 # Code and Design Decisions
 
-<!-- Please document your code & design decisions here. -->
+Divided app to components, pages, hooks, services
+
+used react query for data fetching and caching in memory (instruction was to store in local storage which can be added later)
+
+used scss module for formatting components, to avoid css clashes
+
+couldnot finish property component to add like feature
+
