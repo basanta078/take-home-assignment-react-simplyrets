@@ -1,12 +1,17 @@
 import { useEffect } from "react";
-import { getProperties } from "services/rets";
+import { useQuery } from "react-query";
+import { getProperties, PropertyData } from "services/rets";
 
-
-export function useProperties(){
-    useEffect(() => {
-        getProperties().then(properites => {
-            console.log(properites)
-        })
-    }, [])
-    return {}
+type PropertiesState = {
+    isError: boolean;
+    isLoading: boolean;
+    data?: PropertyData[];
+}
+export function useProperties(): PropertiesState{
+    const {isError, isLoading, data} = useQuery<PropertyData[]>('properties', getProperties);
+    return {
+        isError,
+        isLoading,
+        data,
+    }
 }

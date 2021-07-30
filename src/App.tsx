@@ -4,27 +4,19 @@
 
 import heartFill from './assets/heart-fill.svg';
 import heartStroke from './assets/heart-stroke.svg';
-import { Header } from './components/header/Header';
-import { useProperties} from './hooks/useProperties';
+import { PropertyPage } from './pages/PropertyPage';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+
 
 function App() {
-  useProperties();
   return (
-    <><Header
-        title="Here is the title"
-      />
-    <div
-      style={{
-        maxWidth: '70%',
-        padding: '1em',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        background: '#eee',
-      }}
-    >
-      Main Content
-    </div>
-    </>
+    <Router>
+      <Route path="/" render={() => (
+        <PropertyPage />
+        )}>
+      </Route>
+    </Router>
+    
   );
 }
 

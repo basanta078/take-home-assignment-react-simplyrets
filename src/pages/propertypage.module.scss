@@ -1,0 +1,34 @@
+
+.container {
+    background: #FFFFFF;
+    padding: 58px;
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 58px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @media screen and (max-width: 1180px){
+        .column{
+            width: 33.33%;
+        }
+    }
+
+    @media screen and (max-width: 900px){
+        .column{
+            width: 50%;
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        .column{
+            width: 100%;
+        }
+    }
+}

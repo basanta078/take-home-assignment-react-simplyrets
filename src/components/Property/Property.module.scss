@@ -1,0 +1,43 @@
+.property {
+    border-radius: 4px;
+    img {
+        width: 315 px;
+        height: 280px;
+        border-radius: 4px;
+    }
+    .subHeader {
+        width: 301px;
+        height: 32px;
+        font-weight: 600;
+        font-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #2D2D2D;
+    }
+    .header {
+        font-size: 26px;
+        font-weight: bold;
+        display:flex;
+        line-height: 24px;
+        align-items: center;
+        color: #2D2D2D;
+    }
+
+    .address {
+        font-size: 15px;
+        font-weight: normal;
+        display:flex;
+        line-height: 32px;
+        align-items: center;
+        color: #2D2D2D;
+    }
+
+    .listed {
+        font-size: 14px;
+        font-weight: normal;
+        display:flex;
+        line-height: 32px;
+        align-items: center;
+        color: #979797;
+    }
+}
